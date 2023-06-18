@@ -1,0 +1,194 @@
+
+/*website body*/
+body{
+    background-color: #c7cfde;
+    color: #167b8b;
+    margin-top: 0; 
+}
+
+  
+.logoimg{
+    width: 140px;
+    height: 60px
+}
+/*Headings*/
+
+h1, h2{
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: #167b8b;
+}
+
+/*navbar*/
+.navbar {
+    
+    background-color: rgb(0, 30, 255);
+   
+}
+
+/*navbar*/
+.nav-link{
+    color: #afc5bb;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+
+}
+/*form of nav*/
+.form-control {
+   
+    padding: 6px 36px;
+    margin: 0px 0px 2px 0;
+    
+}
+/*dropdown and text alignment navbar*/
+.btn {text-align: left;}
+.dropdown-menu{
+    background-color: #5ba1b9;
+    font-size: 15px;
+  
+}
+/*carousel image customization*/
+.carousel-img {
+    height: 500px;
+    width: 100%;
+}
+#carousel-header {
+    font-size: 63px;
+    font-weight: 900;
+    color: #0076ff;;
+    font-family: cursive;
+    margin-top: -99px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+#carousel-para {
+    font-size: 21px;
+    color: #dbdae7;
+    font-weight: 600;
+    font-style: italic;
+    background-color: brown;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 63%;
+    top: 7.25rem;
+    left: 17%;
+    padding-top: 5.25re;
+    padding-bottom: 1.25re;
+    text-align: center;
+}
+
+
+/*row padding for responsive*/
+.row>* {
+
+    padding-right: calc(var(--bs-gutter-x) * 1.5);
+    padding-left: calc(var(--bs-gutter-x) * 1.5);
+    padding-bottom: calc(var(--bs-gutter-x) * 1.5);
+    padding-top: calc(var(--bs-gutter-x) * 1.5);
+}
+
+
+
+/*image customization carousel and card*/
+.cimg {
+    height: 225px;
+    width: 100%;
+}
+
+
+
+/*card button customization using inspect */
+.btn {
+    --bs-btn-padding-x: 3.75rem;
+    --bs-btn-padding-y: 0.375rem;}
+
+.margin-bottom{
+    margin-bottom: 30px;
+}
+
+
+
+.profile-img{
+     width: 100%;
+    height: 300px;
+
+}
+.tmimg {
+    height: 200px;
+    width: 500px;
+}
+
+.upper-footer{
+    background-color: #204478;
+    padding: 2px;
+}
+.mb-4{color: #589aac;}
+
+#bgimg1{
+    height: 400px;
+    width: 318px;
+}
+#bgimg2{
+    height: 250px;
+    width: 318px;
+}
+
+#bgimg3{
+    height: 200px;
+    width: 318px;
+}
+
+.readmore-text{
+    color: #518c4a;
+}
+
+/*flightdetails page form*/
+
+.form-check {
+    font-size: large;
+    text-align: left;
+}
+.col-fn {
+    margin-left: -26.5px;
+}
+.dept-arv-group {
+    padding-right: 76%;
+    padding-bottom: 11px;
+    padding-top: 36px;
+    text-align: justify;
+}
+
+#Departure-Date {
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+
+
+#Arrival-Date {
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+.airport-img {
+    width: 500px;
+    height: 350px;
+}
+.air-banner-text{
+    text-align: end;
+}
+
+/*signup and login page*/
+.home-sign-log-img{
+    width: 400px;
+    height: 100px;
+}
+/*for signup homepage*/
+.button-signup{
+    margin-left: 10px;
+    margin-right: 10px;
+}

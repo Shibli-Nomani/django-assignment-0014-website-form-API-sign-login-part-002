@@ -1,0 +1,51 @@
+<!--inherit html common code-->
+
+{% extends 'common_code/user-account.html'%}
+{%load static%}
+{% block css %}<link rel="stylesheet" href="{% static 'css/changepassword.css' %}">{% endblock css %} 
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Change Password
+{% endblock title %}
+
+<!--start block content-->
+
+
+{%block content%} 
+
+    <a href="{% url 'aboutus' %}"><img class = 'home-sign-log-img' src="{% static 'images/home.gif'%}"  alt="..."> </a>
+        <!--start spacing-->
+        <div class ="margin-bottom">
+
+            </div>
+
+
+<form action = "" method = "POST" novalidate> 
+    <h1>Change Your Password</h1>
+    <!--{{form.as_p}}
+    {% for fm in form %}
+    {% endfor%}-->
+
+    {% csrf_token %}
+    {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    <p>{{error}}</p>
+    {% endfor %}
+    {% endif %}
+    
+
+
+    <!--use for loop to remove error reporting-->
+    {% for fm in form %}
+    <!--label, input, error filter-->
+    {{fm.label_tag}}{{fm}} {{fm.errors|striptags}} <br><br>
+    {% endfor %}
+   
+    <input class= "save-password" type = "submit" value = "save">
+    <!--to move login page to registration page-->
+    <a class="button-logout" href = "{% url 'logout' %}">logout</a>
+
+</form>
+
+{%endblock content%}

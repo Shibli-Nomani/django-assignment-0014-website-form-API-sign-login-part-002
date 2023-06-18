@@ -1,0 +1,31 @@
+
+
+body{
+    background-color: antiquewhite;
+}
+form{
+    background-color: rgb(136, 140, 189);
+    width: 550px;
+    padding-left: 250px;
+}
+label{
+    margin-right: 10px;
+    font-weight: 900;
+}
+#id_username{
+    margin-left: 85px;
+}
+
+#id_email{
+    margin-left: 60px;
+}
+#id_first_name{
+    margin-left: 82px;
+}
+#id_last_name{
+    margin-left: 85px;
+}
+
+#id_password1{
+    margin-left: 93px;
+}

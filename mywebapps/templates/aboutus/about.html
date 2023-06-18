@@ -1,0 +1,420 @@
+<!--inherit html common code-->
+{% extends 'common_code/base.html'%}
+{%load static%}
+ <!--inherit start block content-->
+<!--inherit icon -->
+ {% block css2 %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.css"> {% endblock css2 %}
+<!--page title-->
+{% block title %}  
+Home
+{% endblock title %}
+
+{%block content1%} 
+
+
+  <!--start carousel slider-->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img class= "carousel-img" src="{% static 'images/1.jpg'%}" class="d-block w-100" alt="..."> 
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id="carousel-header">First slide label</h5>
+        <p id="carousel-para">Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img class= "carousel-img" src="{% static 'images/2.jpg'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id="carousel-header">Second slide label</h5>
+        <p id="carousel-para">Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class= "carousel-img" src="{% static 'images/3.jpg'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id="carousel-header">Third slide label</h5>
+        <p id="carousel-para">Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--end carousel-->
+
+<!--headline of Attractions-->
+<h2 class="my-5 text-center">Outdoor Activities</h2>
+
+<!--start spacing-->
+<div class ="margin-bottom">
+      
+</div>
+<!--end spacing-->
+
+
+<!--start grid-->
+<div class="container text-center">
+
+  <div class="row">
+
+    <!--start card-->
+
+    <div class="col-md-4"><div class="card" style="width: 20rem;">
+      <img class = 'cimg' src="{% static 'images/adventure/scubadiving.jpg'%}"  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Scuba Diving</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn button-login">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+     <!--end card-->
+
+    <div class="col-md-4"><div class="card" style="width: 20rem;">
+      <img class = 'cimg' src="{% static 'images/adventure/wildsafari.jpg'%}"  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Wild Safari</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn button-login">Book Now</a>
+        
+      </div>
+    </div>
+  </div>
+  <!--end card-->
+  
+    <div class="col-md-3"><div class="card" style="width: 20rem;">
+      <img class = 'cimg' src="{% static 'images/adventure/skydiving.jpg'%}"  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sky Driving</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn button-login">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--end card-->
+  </div>
+</div>
+<!--end grid-->
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+
+<h2 class="my-5 text-center">Popular Travel Package</h2>
+<div class='container'>
+<div class="popular_courses">
+    <div class="container">
+        <div class="row justify-content-center">
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel active_course owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-1520px, 0px, 0px); transition: all 1.5s ease 0s; width: 3420px;">
+                            <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="{% static 'images/packages/na-canyon.jfif'%}" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$605</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">North America</a>
+                                        </h4>
+                                        <p>
+                                            Travel really gives you many invaluable things that make you richer in many aspects like experience, knowledge, friendship, etc.
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+                                                <span class="d-inline-block ml-2">Cameron</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>205 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>306 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="{% static 'images/packages/aus-opera.jpg'%}" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$750</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">Australia</a>
+                                        </h4>
+                                        <p>
+                                          Travelling is the best way to gain new experiences. When you travel, you enrich your experience of life and the world and gradually learn from each unique experience that may change your life. 
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" />
+                                                <span class="d-inline-block ml-2">Jesica</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>109 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>230 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="{% static 'images/packages/ger-frank.jpg'%}" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$400</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">Germany</a>
+                                        </h4>
+                                        <p>
+                                          Travel is an investment that cannot be snatched from you by anyone, just like education.
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" />
+                                                <span class="d-inline-block ml-2">Filma</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>50 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>70 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="{% static  'images/packages/nor-auro.jpg'%}" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$550</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">Norway</a>
+                                        </h4>
+                                        <p>
+                                          You are curious to see the world and to learn about other cities, countries, and cultures.
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="" />
+                                                <span class="d-inline-block ml-2">Denver</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>17 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>35 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="{% static 'images/packages/spain-city.jpg'%}" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$705</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">Spain</a>
+                                        </h4>
+                                        <p>
+                                          During travel, you enlighten yourself about different cultures. When you visit a new place, you will meet people of different cultures, see how they live, and then talk to them.
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="" />
+                                                <span class="d-inline-block ml-2">Jonathon</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>345 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>400 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="{% static 'images/packages/ant-pen.jpg'%}" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$999</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">Antertica</a>
+                                        </h4>
+                                        <p>
+                                          Travel allows you to learn about more than just the places you visit, but, more importantly, it allows you to learn about yourself.
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="" />
+                                                <span class="d-inline-block ml-2">Grey Mackerel</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>505 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>455 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned active" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="{% static 'images/packages/ant-pen.jpg'%}" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$250</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">Vietnam</a>
+                                        </h4>
+                                        <p>
+                                          You are curious to see the world and to learn about other cities, countries, and cultures. But you'll never accomplish anything if you stay in your comfort zone. 
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" />
+                                                <span class="d-inline-block ml-2">Cameron</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>29 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>47 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="https://www.bootdey.com/image/350x280/20B2AA/000000" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$350</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">Thailand</a>
+                                        </h4>
+                                        <p>
+                                          Travel teaches you about the good and bad parts of a world you don't know much about and lets you meet a wide range of people. 
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+                                                <span class="d-inline-block ml-2">Olive</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>67 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>55 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                <div class="single_course">
+                                    <div class="course_head">
+                                        <img class="img-fluid" src="https://www.bootdey.com/image/350x280/#FFA07A/000000" alt="" />
+                                    </div>
+                                    <div class="course_content">
+                                        <span class="price">$675</span>
+                                        <span class="tag mb-4 d-inline-block">package</span>
+                                        <h4 class="mb-3">
+                                            <a href="#">United Kingdom</a>
+                                        </h4>
+                                        <p>
+                                          Wherever you go, there you are.
+                                        </p>
+                                        <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                                            <div class="authr_meta">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar9.png" alt="" />
+                                                <span class="d-inline-block ml-2">Malcum</span>
+                                            </div>
+                                            <div class="mt-lg-0 mt-3">
+                                                <span class="meta_info mr-4">
+                                                    <a href="#"> <i class="ti-user mr-2"></i>25 </a>
+                                                </span>
+                                                <span class="meta_info">
+                                                    <a href="#"> <i class="ti-heart mr-2"></i>35 </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>  
+
+{%endblock content1%}
+
+ <!--end block content-->

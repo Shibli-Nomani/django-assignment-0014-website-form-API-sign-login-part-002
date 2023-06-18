@@ -1,0 +1,46 @@
+<!--inherit html common code-->
+
+{% extends 'common_code/user-account.html'%}
+{%load static%}
+{% block css %}<link rel="stylesheet" href="{% static 'css/login.css' %}">{% endblock css %} 
+
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Login Account
+{% endblock title %}
+
+<!--start block content-->
+
+
+{%block content%} 
+<a href="{% url 'aboutus' %}"><img class = 'home-sign-log-img' src="{% static 'images/home.gif'%}"  alt="..."> </a>
+        <!--start spacing-->
+        <div class ="margin-bottom">
+
+            </div>
+
+<form action = "" method = "POST" novalidate> 
+    <h1>Login into your account</h1>
+    
+    {% csrf_token %}
+    {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    <p>{{error}}</p>
+    {% endfor %}
+    {% endif %}
+    
+
+
+    <!--use for loop to remove error reporting-->
+    {% for fm in form %}
+    <!--label, input, error filter-->
+    {{fm.label_tag}}{{fm}} {{fm.errors|striptags}} <br><br>
+    {% endfor %}
+   
+    <input class="button-login" type = "submit" value = "login" >
+    <!--to move login page to registration page-->
+    <a href = "{% url 'usercform' %}" class="button-signup">signup</a>
+
+</form> 
+{%endblock content%}

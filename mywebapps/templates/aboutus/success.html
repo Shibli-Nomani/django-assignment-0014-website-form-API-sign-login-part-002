@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Successful</title>
+        <!--load css-->
+        {% block css %}<link rel="stylesheet" href="{% static 'css/submit.css' %}">{% endblock css %}
+        {% block css1 %}<link rel="stylesheet" href="{% static 'css/buttons.css' %}">{% endblock css1 %}
+</head>
+<body>
+        <img class="submit-img" src="{% static 'images/congratulation.gif'%}">
+
+        <h1>You have successfully login your account</h1>
+        
+        <div class = "container-success">
+                <a href = "{% url 'logout'  %}" class="button-logout"> logout </a>
+                <a href = "{% url 'changepass'  %}" class="button-change-password"> Change with old Password </a>
+                <a href = "{% url 'withoutoldpass'  %}" class="change-password-no-old"> Change without old Password </a>
+                
+        </div>
+        <!--start spacing-->
+        <div class ="margin-bottom-success"> </div>
+        <div style="text-align:center">
+                <a  class="button-home" href = "{% url 'aboutus' %}">Back to Homepage</a>
+        
+        </div>
+        
+
+        
+
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+  
+  

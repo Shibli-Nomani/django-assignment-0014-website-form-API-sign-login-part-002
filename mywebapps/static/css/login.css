@@ -1,0 +1,11 @@
+
+form{
+    background-color: rgb(136, 140, 189);
+    width: 550px;
+    padding-left: 250px;
+}
+
+label{
+    margin-right: 46px;
+    font-weight: 900;
+}

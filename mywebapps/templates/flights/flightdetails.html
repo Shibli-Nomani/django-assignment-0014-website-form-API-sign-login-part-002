@@ -1,0 +1,171 @@
+<!--inherit html common code-->
+
+{% extends 'common_code/base.html'%}
+
+{%load static%}
+
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Flights 
+{% endblock title %}
+
+{%block content1%} 
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+
+
+<!--start card-->
+    <div class="container">
+    <div class="card bg-dark text-white">
+        <img class="airport-img" src="{% static 'images/airport.jpg'%}" alt="Card image">
+        <div class="card-img-overlay">
+          <h3 class="air-banner-text">Sky is the Limit</h3>
+          <p class="air-banner-text">We are here to serve you the best</p>
+          <p class="air-banner-text">Last updated 3 mins ago</p>
+        </div>
+      </div>
+    </div>
+<!--start card-->
+
+<!--headline -->
+<h2 class="my-5 text-center">Flying With Us</h2>
+
+  
+
+  
+  <!--start grid-->
+  <!--start service form-->
+  
+  <div class="row" >
+    <div class = "col col-md-3">
+      <div class="card text-white bg-success">
+        <img class = img-flight src="{% static 'images/packages/air-tickets.jpg'%}" class="card-img-center" alt="..." style="height: 200px; width: 100%;">
+        <div class="card-body">
+        <h5 class="card-title">Air Tickets</h5>
+        <p class="card-text">Reliable Ticketing and Compitative Price.</p>
+        
+       </div>
+      </div>
+    </div>
+    <div class = "col col-md-3">
+      <div class="card text-white bg-warning">
+        <img class = img-flight src="{% static 'images/packages/air-checkin.jpg'%}" class="card-img-center" alt="..." style="height: 200px; width: 100%;">
+        <div class="card-body">
+        <h5 class="card-title">CheckIn & CheckOut</h5>
+        <p class="card-text">Avail Previlaged Pass for Faster Immigration.</p>
+        
+       </div>
+      </div>
+    </div>
+    <div class = "col col-md-3">
+      <div class="card text-white bg-info">
+        <img class = img-flight src="{% static 'images/packages/pickup-drop.jpg'%}" class="card-img-center" alt="..." style="height: 200px; width: 100%;">
+        <div class="card-body">
+        <h5 class="card-title">Drop & Pickup</h5>
+        <p class="card-text">Free Taxi Service for Hotel and Airport.</p>
+        
+       </div>
+      </div>
+    </div>
+    <div class = "col col-md-3">
+      <div class="card text-white bg-danger">
+        <img class = img-flight src="{% static 'images/packages/lost-found.jpg'%}" class="card-img-center" alt="..." style="height: 200px; width: 100%;">
+        <div class="card-body">
+        <h5 class="card-title">Lost & Found</h5>
+        <p class="card-text">Strong Insurace Policy against Lost Item.</p>
+        
+       </div>
+      </div>
+    </div>
+</div>
+<!--Flight booking form start-->
+<div class="container-new text-center" style = "padding-left: 15%; padding-right: 15%;" >
+  
+    <div class="form-flight-book">
+        <form style = "border: 2px solid  #9c9de0; padding: 39px; margin: 120px; shadow: 5px 10px;     background-color: #9c9de0;border-radius: 30px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-image: url('{% static 'images/packages/book.jpg' %}');">
+          
+          <h3 class="card-title">Flight Booking Registration</h3>
+            <div class="row">
+                <div class="col-fn col-md-6">
+                  <input type="text" class="form-control" placeholder="First name" id="first-name">
+                </div>
+                <div class="col col-md-4">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+           
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                
+              </div>
+              <div class="form-group col-md-4" >
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="dept-arv-group">
+                <label for="Departure">Departure Date:</label>
+                <input type="date" id="Departure-Date" name="Departure Date">
+                
+            </div>
+            <div class="dept-arv-group">
+                <label for="Arrival">Arrival Date:</label>
+                <input type="date" id="Arrival-Date" name="Arrival Date">
+                
+            </div>
+            <div class="form-row" >
+              <div class="form-group col-md-4">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">submit</button>
+          </form>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+
+
+{%endblock content1%}
+
+
+
+
+
+ <!--end block content-->

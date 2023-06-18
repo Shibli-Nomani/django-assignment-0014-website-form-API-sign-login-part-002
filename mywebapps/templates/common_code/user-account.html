@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css block-->
+    {% block css %}<link rel="stylesheet" href="{% static 'css/common.css' %}">{% endblock css %}
+    {% block css1 %}<link rel="stylesheet" href="{% static 'css/buttons.css' %}">{% endblock css1 %}
+    {% block css2 %}<link rel="stylesheet" href="{% static 'css/forms.css' %}">{% endblock css2 %}
+    <!--help to call different css block in other html page-->
+    {% block css3 %} {% endblock css3 %}
+
+     <!--page title-->
+    <title>{% block title %}  {% endblock title %}</title>
+</head>
+<body>
+    <div class= "container-new text-center" id = "box-user-account">
+
+        <div class="row">
+    
+    
+            <div class="col-6"><div class="card" style="width: 45rem;">
+     <!--start block content-->
+
+     {%block content%} 
+    
+     {%endblock content%}
+
+            </div>
+        </div>
+    </div>
+<!--start spacing-->
+<div class ="margin-bottom">
+
+</div>  
+</body>
+</html>

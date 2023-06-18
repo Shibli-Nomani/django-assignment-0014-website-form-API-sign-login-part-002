@@ -1,0 +1,113 @@
+<!--inherit html common code-->
+
+{% extends 'common_code/base.html'%}
+
+{%load static%}
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Attractions
+{% endblock title %}
+
+{%block content1%} 
+<h2 class="my-5 text-center">Travel Packages</h2>
+<div class="container">
+  <div class="card mb-4" style="max-width: 740px;" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'images/travel-4.jpg'%}" class="img-fluid rounded-start" alt="..." 
+        style="height: 100%; width: 100%;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body  d-flex flex-column align-items-center">
+          <h5 class="card-title">North America</h5>
+          <p class="card-text">Happy Mid-Range Travel.</p>
+            <ol>
+              <li>Air Tickets</li>
+              <li>Visa Processing</li>
+              <li>Pick and Drop</li>
+              <li>Food, Accomodation, Local Transport</li>
+              <li>Place of Attractions</li>
+            </ol>
+          <a href="{% static 'files/myfile.pdf'%}">Download Brochure</a>
+          <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!--start spacing-->
+<div class ="margin-bottom"> </div>
+<!--end spacing-->
+<!--second package-->
+<div class="container">
+  <div class="card mb-4" style="max-width: 740px;" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'images/travel-3.jpg'%}" class="img-fluid rounded-start" alt="..." 
+        style="height: 100%; width: 100%;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body  d-flex flex-column align-items-center">
+          <h5 class="card-title">Europe</h5>
+          <p class="card-text">Happy Mid-Range Travel.</p>
+            <ol>
+            <li>Air Tickets</li>
+            <li>Visa Processing</li>
+            <li>Pick and Drop</li>
+            <li>Food, Accomodation, Local Transport</li>
+            <li>Place of Attractions</li>
+          </ol>
+          <a href="{% static 'files/myfile.pdf'%}">Download Brochure</a>
+          <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+
+<blockquote class="blockquote text-right">
+    <p class="mb-0">    
+
+        <h4>variable</h4>
+
+        <h4> Our recommanded destination [{{l1}}] for adventure travellers. </h4>
+
+        <h4> Our recommanded destination [{{l2}}]for history lovers. </h4>
+
+        <h4> Our recommanded destination [{{l3}}] for city lovers. </h4>
+
+        <h4>Use Filter</h4>
+
+        <h4> Our recommanded destination [{{l1 | upper}}] for adventure travellers. </h4>
+
+        <h4> Our recommanded destination [{{l2 | lower}}] for history lovers. </h4>
+
+        <h4> Our recommanded destination [{{l3 | title}}] for city lovers. </h4></p>
+  </blockquote>
+
+
+
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+
+
+{%endblock content1%}
+
+
+
+
+
+ <!--end block content-->
+
+
+
+
